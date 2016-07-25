@@ -12,6 +12,9 @@
 		D7BA0B2A1D461621006FFC8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BA0B281D461621006FFC8A /* Main.storyboard */; };
 		D7BA0B2C1D461621006FFC8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7BA0B2B1D461621006FFC8A /* Assets.xcassets */; };
 		D7BA0B2F1D461621006FFC8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7BA0B2D1D461621006FFC8A /* LaunchScreen.storyboard */; };
+		D7BA0B3A1D46164E006FFC8A /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D7BA0B371D46164E006FFC8A /* index.html */; };
+		D7BA0B3B1D46164E006FFC8A /* mycss.css in Resources */ = {isa = PBXBuildFile; fileRef = D7BA0B381D46164E006FFC8A /* mycss.css */; };
+		D7BA0B3C1D46164E006FFC8A /* myjs.js in Resources */ = {isa = PBXBuildFile; fileRef = D7BA0B391D46164E006FFC8A /* myjs.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		D7BA0B2B1D461621006FFC8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7BA0B2E1D461621006FFC8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7BA0B301D461621006FFC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7BA0B371D46164E006FFC8A /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		D7BA0B381D46164E006FFC8A /* mycss.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = mycss.css; sourceTree = "<group>"; };
+		D7BA0B391D46164E006FFC8A /* myjs.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = myjs.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +62,23 @@
 			children = (
 				D7BA0B241D461621006FFC8A /* AppDelegate.swift */,
 				D7BA0B261D461621006FFC8A /* ViewController.swift */,
+				D7BA0B361D46163F006FFC8A /* thePage */,
 				D7BA0B281D461621006FFC8A /* Main.storyboard */,
 				D7BA0B2B1D461621006FFC8A /* Assets.xcassets */,
 				D7BA0B2D1D461621006FFC8A /* LaunchScreen.storyboard */,
 				D7BA0B301D461621006FFC8A /* Info.plist */,
 			);
 			path = matrixSaver;
+			sourceTree = "<group>";
+		};
+		D7BA0B361D46163F006FFC8A /* thePage */ = {
+			isa = PBXGroup;
+			children = (
+				D7BA0B371D46164E006FFC8A /* index.html */,
+				D7BA0B381D46164E006FFC8A /* mycss.css */,
+				D7BA0B391D46164E006FFC8A /* myjs.js */,
+			);
+			name = thePage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +113,7 @@
 				TargetAttributes = {
 					D7BA0B201D461621006FFC8A = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 88S3QZH7N6;
 					};
 				};
 			};
@@ -123,7 +141,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7BA0B2F1D461621006FFC8A /* LaunchScreen.storyboard in Resources */,
+				D7BA0B3A1D46164E006FFC8A /* index.html in Resources */,
 				D7BA0B2C1D461621006FFC8A /* Assets.xcassets in Resources */,
+				D7BA0B3C1D46164E006FFC8A /* myjs.js in Resources */,
+				D7BA0B3B1D46164E006FFC8A /* mycss.css in Resources */,
 				D7BA0B2A1D461621006FFC8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = matrixSaver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cvv.matrixSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -262,10 +286,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = matrixSaver/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cvv.matrixSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
