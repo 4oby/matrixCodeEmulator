@@ -18,6 +18,7 @@ extension ViewController {
 
   override func viewDidLoad() {
       showTheDammPage()
+    UIApplication.sharedApplication().idleTimerDisabled = true
   }
 
   
