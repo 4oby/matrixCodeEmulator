@@ -17,6 +17,7 @@ class ViewController: UIViewController {
 extension ViewController {
 
   override func viewDidLoad() {
+    NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.showTheDammPage), name: UIDeviceOrientationDidChangeNotification, object: nil)
       showTheDammPage()
     UIApplication.sharedApplication().idleTimerDisabled = true
   }
@@ -31,4 +32,5 @@ extension ViewController {
     
     }
   }
+  
 }
